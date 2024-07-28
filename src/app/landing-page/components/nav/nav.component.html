@@ -1,0 +1,23 @@
+<!-- <p>nav works!</p> -->
+
+<nav class="nav {{ footer }} {{ show }}">
+  <!-- <a href="#home"> Inicio </a>
+  <a href="#about-us"> Sobre nosotros </a>
+  <a href="#how-does-it-work"> ¿Como funciona? </a>
+  <a href="#probabilities"> Probabilidades </a>
+  <a href="#frequent-questions"> Preguntas Frecuentes </a>
+  <a href="#contact-us"> Contáctanos </a>
+  <a href="#terms-and-conditions"> Términos y Condiciones </a> -->
+  <ul>
+    @for (navItem of navList; track navItem.ref) {
+    <li>
+      <a
+        class="{{ '#' + activeSection === navItem.ref ? 'activeSection' : '' }}"
+        [href]="navItem.ref"
+      >
+        {{ navItem.label }}
+      </a>
+    </li>
+    }
+  </ul>
+</nav>

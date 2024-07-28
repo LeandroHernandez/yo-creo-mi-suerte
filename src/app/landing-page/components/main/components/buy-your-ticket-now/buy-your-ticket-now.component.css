@@ -1,0 +1,42 @@
+.button {
+  background-color: var(--accent);
+  color: #ffffff;
+  padding: 10px;
+  border-radius: 26px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 26px;
+  border: none;
+  font-weight: 700;
+  gap: 16px;
+  width: 350px;
+
+  max-width: 80vw;
+
+  & img {
+    max-height: 26px;
+  }
+  opacity: 0;
+  transform: translateY(100px);
+  transform-origin: left;
+  animation: show linear both;
+  animation-timeline: view();
+  /* animation-range: entry 20% cover 30%; */
+  animation-range: entry 25% cover 40%;
+}
+
+@media (max-width: 430px) {
+  .button {
+    font-size: 16px;
+    /* min-width: none; */
+  }
+}
+
+@keyframes show {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

@@ -1,0 +1,341 @@
+.probabilities,
+.probabilities__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+}
+
+.probabilities__container {
+  background-image: url(../../../../../../assets/RECURSOS_YOCREOMISUERTE/PROBABILIDADES/IndicadorProbabilidades.png);
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding: 200px 0;
+  width: 100%;
+}
+
+.cake__div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 35px;
+  line-height: 40px;
+  gap: 16px;
+  margin-top: 50px;
+}
+
+.cake__div,
+.cake__div + p {
+  width: 1200px;
+  max-width: 90%;
+  opacity: 0;
+  transform: translateX(100px);
+  animation: show linear both;
+  animation-timeline: view();
+  /* animation-range: entry 20% cover 30%; */
+  animation-range: entry 25% cover 40%;
+}
+
+.cake__div + p {
+  font-size: 26.7px;
+  transform: translateX(-100px);
+}
+
+.cake__div p {
+  font-size: 34px;
+}
+
+.cake__img {
+  height: 80px;
+  max-height: 100%;
+}
+
+.entities {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 70px 0;
+  margin-top: 60px;
+}
+
+.first__entities {
+  margin-top: 200px;
+}
+
+.entity__container {
+  height: 300px;
+  width: 230px;
+  /* max-width: 70%; */
+  display: flex;
+  justify-content: center;
+  margin: 0 25px;
+}
+
+.entity__container:first-child,
+.entity__container:nth-child(2),
+.entity__container:nth-child(3),
+.entity__container:nth-child(4) {
+  margin: 0 40px;
+}
+
+.entity {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #ffffff;
+  border-radius: 30px;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  color: var(--primary);
+  transition: var(--transition-speed) transform, color,
+    background-color ease-out;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  position: relative;
+  z-index: 10;
+  & figure {
+    width: 90%;
+    height: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: var(--transition-speed) transform ease-out;
+    /* z-index: 10; */
+
+    & .img {
+      max-height: 120px;
+      max-width: 90%;
+    }
+  }
+  opacity: 0;
+  transform: scale(0.7);
+  animation: show linear both;
+  animation-timeline: view();
+  /* animation-range: entry 20% cover 30%; */
+  animation-range: entry 25% cover 40%;
+}
+
+/* .YoCreoMiSuerte,
+.entity:hover {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+  transform: scale(1.1);
+} */
+
+/* .YoCreoMiSuerte figure,
+.entity:hover figure {
+  transform: scale(1.1);
+} */
+
+/* .YoCreoMiSuerte:hover {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+  transform: scale(1.2);
+} */
+
+/* .YoCreoMiSuerte:hover figure {
+  transform: scale(1.2);
+} */
+
+.YoCreoMiSuerte .entity__texts {
+  color: #ffffff;
+  background-color: var(--primary);
+}
+
+.YoCreoMiSuerte::before {
+  content: "";
+  position: absolute;
+  height: 30px;
+  width: 50px;
+  background-image: url(../../../../../../assets/RECURSOS_YOCREOMISUERTE/PROBABILIDADES/IconoFlecha.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: var(--transition-speed) ease-out;
+  transition-property: transform, opacity;
+  /* opacity: 0; */
+  transform: translateY(-60px);
+  z-index: 10;
+}
+
+/* .YoCreoMiSuerte:hover::before {
+  transform: translateY(-60px);
+  opacity: 1;
+  z-index: 10;
+} */
+
+.entity__texts {
+  height: 30%;
+  width: 100%;
+  background-color: var(--secondary);
+  border-radius: 0 0 30px 30px;
+  align-content: center;
+  line-height: 20px;
+  font-size: 14px;
+  font-weight: 500;
+  transition: var(--transition-speed) background-color, color ease-out;
+
+  & h6,
+  & strong {
+    font-weight: 800;
+  }
+}
+
+.entity__texts h6 {
+  font-size: 20px;
+  line-height: 34px;
+}
+
+.TheNationalLoteri h6 {
+  line-height: 20px;
+  font-size: 18px;
+}
+
+.Megamillion h6 {
+  font-size: 18px;
+}
+
+.Superenalotto .entity__texts {
+  font-size: 13px;
+}
+
+.buy__button {
+  position: relative;
+  top: -50px;
+}
+
+@media (max-width: 1300px) {
+  .probabilities__container {
+    padding: 100px 0;
+  }
+
+  .cake__div p,
+  .cake__div + p {
+    font-size: 30px;
+  }
+
+  .entities {
+    margin-top: 100px;
+  }
+
+  .entity__container:first-child,
+  .entity__container:nth-child(2),
+  .entity__container:nth-child(3),
+  .entity__container:nth-child(4) {
+    margin: 0 25px;
+  }
+}
+
+@media (max-width: 1180px) {
+  .probabilities__container {
+    padding: 100px 0;
+  }
+
+  .cake__div p,
+  .cake__div + p {
+    font-size: 25px;
+  }
+}
+
+@media (max-width: 1074px) {
+  .probabilities__container {
+    padding: 50px 0;
+  }
+
+  .cake__img {
+    height: 60px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .cake__div p,
+  .cake__div + p {
+    font-size: 20px;
+  }
+  .entities {
+    margin-top: 70px;
+  }
+}
+
+@media (max-width: 810px) {
+  .cake__div {
+    line-height: 20px;
+  }
+  .cake__div p,
+  .cake__div + p {
+    font-size: 16px;
+  }
+  .cake__img {
+    height: 35px;
+  }
+
+  .entity__texts p {
+    font-size: 14px;
+  }
+
+  .Superenalotto .entity__texts p {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 650px) {
+  .cake__div {
+    margin-top: 20px;
+    gap: 10px;
+  }
+
+  .cake__div p {
+    font-size: 14px;
+  }
+
+  .cake__div + p {
+    max-width: 80%;
+    font-size: 14px;
+  }
+
+  .cake__img {
+    height: 35px;
+  }
+
+  .entities {
+    gap: 50px 0;
+    margin-top: 20px;
+    max-height: 1200px;
+    padding: 110px 0 50px;
+    overflow-y: auto;
+  }
+
+  .entity__container {
+    height: 250px;
+    width: 200px;
+
+    &::before {
+      height: 22px;
+      width: 37px;
+    }
+
+    &:hover::before {
+      transform: translateY(-45px);
+      opacity: 1;
+      z-index: 10;
+    }
+  }
+
+  .entity__texts h6 {
+    font-size: 14px;
+  }
+
+  .entity__texts p,
+  .Superenalotto .entity__texts p {
+    font-size: 12px;
+  }
+
+  .entity figure {
+    height: 65%;
+  }
+
+  .entity__texts {
+    height: 35%;
+  }
+}

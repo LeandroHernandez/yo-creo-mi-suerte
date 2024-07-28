@@ -1,0 +1,103 @@
+.about-us {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* gap: 50px; */
+  margin: auto;
+  width: 98%;
+  & div:last-child {
+    position: relative;
+    top: -25px;
+  }
+}
+
+.about-us__container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 80px;
+  background-image: url(../../.././../../../assets/RECURSOS_YOCREOMISUERTE/SOBRENOSTROS/IndicadorSeccionSObreNosotros.png);
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: contain;
+  /* height: 80vh; */
+  padding: 150px 0;
+
+  & .texts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 16px;
+    max-width: 44%;
+    font-size: 25px;
+    & span {
+      display: block;
+      margin-top: 16px;
+      word-spacing: 12px;
+    }
+
+    & strong:last-child {
+      font-size: 32px;
+      font-weight: 750;
+    }
+  }
+
+  & .img {
+    width: 500px;
+    max-width: 70%;
+    transition: var(--transition-speed) transform ease-out;
+    /* &:hover {
+      transform: scale(1.1);
+    } */
+  }
+}
+
+.chica__img {
+  opacity: 0;
+  transform: translateX(100px);
+  animation: show linear both;
+  animation-timeline: view();
+  /* animation-range: entry 20% cover 30%; */
+  animation-range: entry 25% cover 40%;
+}
+
+@keyframes show {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@media (max-width: 1300px) {
+  .about-us__container {
+    padding: 100px 0;
+  }
+}
+
+@media (max-width: 1074px) {
+  .about-us__container {
+    padding: 50px 0;
+  }
+
+  .about-us__container .texts {
+    max-width: 90%;
+  }
+}
+
+@media (max-width: 700px) {
+  .about-us__container {
+    gap: 20px;
+  }
+  .about-us__container .texts strong:last-child {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 500px) {
+  .about-us__container .texts strong:last-child {
+    font-size: 16px;
+  }
+}

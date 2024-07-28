@@ -1,0 +1,51 @@
+<!-- <p>contact-us works!</p> -->
+
+<section
+  id="contact-us"
+  class="contact-us mainSection {{
+    activeSection === 'contact-us' ? 'activeSection' : ''
+  }}"
+>
+  <app-section-title [sectionTitle]="'Contáctanos'"></app-section-title>
+  <div class="contact-us__container">
+    <div class="contact-us__texts">
+      <div>
+        <img
+          src="../../../../../../assets/RECURSOS_YOCREOMISUERTE/PREGUNTASFRECUENTES/IconoPregunta.svg"
+          alt="IconoPregunta"
+          class="question__img img"
+        />
+        <h6>Estamos aquí para asistirte con cualquier pregunta o inquietud</h6>
+      </div>
+      <p>
+        ¿Tienes preguntas o necesitas asistencia? Estamos aquí para ayudarte.
+        Contáctanos y haremos todo lo posible por asegurarnos de que tu
+        experiencia en YoCreoMiSuerte.com sea inolvidable.
+      </p>
+    </div>
+    <form action="" class="form">
+      <input
+        type="text"
+        name="Nombres"
+        placeholder="Nombres"
+        required
+        class="input input__name"
+      />
+      <input
+        type="email"
+        name="Correo"
+        placeholder="Correo Electronico"
+        required
+        class="input input__email"
+      />
+      <textarea
+        name="Mensage"
+        rows="4"
+        title="Mensage"
+        required
+        class="textarea textarea__message"
+      ></textarea>
+      <button type="submit" class="button">Enviar</button>
+    </form>
+  </div>
+</section>

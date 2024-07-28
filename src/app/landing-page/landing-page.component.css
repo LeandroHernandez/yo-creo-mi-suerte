@@ -1,0 +1,7 @@
+.container {
+  /* min-height: 220vh; */
+  width: 100%;
+  background-image: url(../../assets/RECURSOS_YOCREOMISUERTE/BACKGROUND/Background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}

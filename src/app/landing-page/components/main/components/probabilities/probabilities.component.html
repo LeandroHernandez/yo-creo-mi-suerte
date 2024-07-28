@@ -1,0 +1,64 @@
+<!-- <p>probabilities works!</p> -->
+<section
+  id="probabilities"
+  class="probabilities mainSection {{
+    activeSection === 'probabilities' ? 'activeSection' : ''
+  }} "
+>
+  <div class="probabilities__container">
+    <app-section-title
+      [other]="'Tu Oportunidad de ganar es'"
+      [sectionTitle]="'¡Mucho Mayor Aquí!'"
+    ></app-section-title>
+    <div class="cake__div">
+      <img
+        src="../../../../../../assets/RECURSOS_YOCREOMISUERTE/PROBABILIDADES/IconoGraficoPaste.svg"
+        alt="IconoGraficoPaste"
+        class="cake__img img"
+      />
+      <p>
+        <strong
+          >Comparando nuestras probabilidades con las de las principales
+          loterías internacionales las loterías más importantes del
+          mundo:</strong
+        >
+      </p>
+    </div>
+    <p>
+      En YoCreoMiSuerte.com, ofrecemos una oportunidad mucho más accesible para
+      ganar. Nuestro sorteo cuenta con solo 2000 boletos, lo que significa que
+      tienes una probabilidad de 1 en 2000 de ganar, o el 0.05%. A continuación,
+      te mostramos cómo esto se compara con las probabilidades de ganar algunas
+      de las loterías más importantes del mundo:
+    </p>
+    @for (listItem of entityList; track $index) {
+    <div class="entities {{ $index === 0 ? 'first__entities' : '' }}">
+      @for (entityItem of listItem.list; track entityItem.img.src) {
+      <div class="entity__container">
+        <div class="entity {{ entityItem.class ?? '' }}">
+          <figure class="entity__figure">
+            <img
+              src="../../../../../../assets/RECURSOS_YOCREOMISUERTE/PROBABILIDADES/{{
+                entityItem.img.src
+              }}"
+              [alt]="entityItem.img"
+              [class]="entityItem.img.class + '__img entity__img img'"
+            />
+          </figure>
+          <div class="entity__texts">
+            <h6>{{ entityItem.title }}</h6>
+            <p>
+              <strong>Probabilidad:</strong> 1 en {{ entityItem.probability }}
+            </p>
+            <p><strong>Porcentaje:</strong> {{ entityItem.percentage }}%</p>
+          </div>
+        </div>
+      </div>
+      }
+    </div>
+    }
+  </div>
+  <div class="buy__button">
+    <app-buy-your-ticket-now></app-buy-your-ticket-now>
+  </div>
+</section>

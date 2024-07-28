@@ -1,0 +1,30 @@
+.social {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  min-width: 160px;
+}
+
+.social a {
+  height: 20px;
+  min-width: none;
+}
+
+.social .img {
+  height: 100%;
+  transition: var(--transition-speed) transform ease-out;
+  &:hover {
+    transform: scale(1.5);
+  }
+}
+
+.footer .img {
+  height: 25px;
+}
+
+@media (max-width: 1100px) {
+  .social a {
+    height: 25px;
+  }
+}

@@ -1,0 +1,238 @@
+.frequent-questions,
+.frequent-questions__container,
+.content__container .list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 60px;
+  width: 100%;
+}
+
+.frequent-questions__container {
+  background-image: url(../../.././../../../assets/RECURSOS_YOCREOMISUERTE/PREGUNTASFRECUENTES/IndicadorPreguntasFrecuentes.png);
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding: 100px 50px 50px;
+}
+
+.content__container,
+.answer__container div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.content__container {
+  width: 100%;
+  font-size: 27.2px;
+}
+
+@keyframes show {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.content__container .list {
+  width: 35.5%;
+  gap: 20px;
+  justify-content: start;
+  align-items: end;
+  padding: 15px 50px 15px 0;
+  /* background-image: url(../../../../../../assets/RECURSOS_YOCREOMISUERTE/PREGUNTASFRECUENTES/lineasdetrebol/LineaTrebolGarantia.svg); */
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: contain;
+  /* background-size: auto; */
+
+  & li {
+    cursor: pointer;
+    transition: var(--transition-speed) transform ease-out;
+    opacity: 0;
+    transform: translateX(-100px);
+    animation: show linear both;
+    animation-timeline: view();
+    /* animation-range: entry 20% cover 30%; */
+    animation-range: entry 10% cover 15%;
+  }
+
+  & .select {
+    color: var(--primary);
+    transform: scale(1.1) translateX(-5%);
+    font-weight: 700;
+  }
+
+  /* & li:hover {
+    transform: scale(1.1) translateX(-5%);
+  } */
+}
+
+.content__container .list__0 {
+  background-image: url(../../../../../../assets/RECURSOS_YOCREOMISUERTE/PREGUNTASFRECUENTES/lineasdetrebol/LineaTrebolGarantia.svg);
+}
+
+.content__container .list__1 {
+  background-image: url(../../../../../../assets/RECURSOS_YOCREOMISUERTE/PREGUNTASFRECUENTES/lineasdetrebol/LineaTrebolComoParticipar.svg);
+}
+
+.content__container .list__2 {
+  background-image: url(../../../../../../assets/RECURSOS_YOCREOMISUERTE/PREGUNTASFRECUENTES/lineasdetrebol/LineaTrebolMetodosDePago.svg);
+}
+
+.content__container .list__3 {
+  background-image: url(../../../../../../assets/RECURSOS_YOCREOMISUERTE/PREGUNTASFRECUENTES/lineasdetrebol/LineaTrebolConfirmacionBoletos.svg);
+}
+
+.content__container .list__4 {
+  background-image: url(../../../../../../assets/RECURSOS_YOCREOMISUERTE/PREGUNTASFRECUENTES/lineasdetrebol/LineaTrebolFechaDeSorteo.svg);
+}
+
+.content__container .list__5 {
+  background-image: url(../../../../../../assets/RECURSOS_YOCREOMISUERTE/PREGUNTASFRECUENTES/lineasdetrebol/LineaTrebolPrivacidadYSeguridad.svg);
+}
+
+.content__container .list__6 {
+  background-image: url(../../../../../../assets/RECURSOS_YOCREOMISUERTE/PREGUNTASFRECUENTES/lineasdetrebol/LineaTrebolReclamarPremios.svg);
+}
+
+.content__container .list__7 {
+  background-image: url(../../../../../../assets/RECURSOS_YOCREOMISUERTE/PREGUNTASFRECUENTES/lineasdetrebol/LineaTrebolSoporteAlCliente.svg);
+}
+
+.answer__container div {
+  align-items: center;
+  & img {
+    max-height: 70px;
+  }
+  & h5 {
+    width: 86%;
+    font-size: 50px;
+    line-height: 50px;
+  }
+}
+
+.answer__container {
+  width: 55%;
+  & p {
+    min-width: 100%;
+    margin: 0;
+  }
+  opacity: 0;
+  transform: translateY(100px);
+  animation: show linear both;
+  animation-timeline: view();
+  /* animation-range: entry 20% cover 30%; */
+  animation-range: entry 10% cover 35%;
+}
+
+@media (max-width: 1300px) {
+  .content__container {
+    font-size: 20px;
+  }
+  .answer__container div {
+    & h5 {
+      width: 82%;
+      font-size: 30px;
+    }
+  }
+}
+
+@media (max-width: 1000px) {
+  .content__container {
+    /* width: 100%; */
+    font-size: 16px;
+  }
+  .answer__container div {
+    align-items: center;
+    & img {
+      max-height: 50px;
+    }
+    & h5 {
+      width: 82%;
+      font-size: 20px;
+      line-height: 30px;
+    }
+  }
+
+  .content__container .list {
+    width: 40%;
+  }
+}
+
+@media (max-width: 800px) {
+  .content__container {
+    flex-direction: column;
+    gap: 50px;
+    align-items: center;
+  }
+  /* .answer__container div {
+    align-items: center;
+    & img {
+      max-height: 50px;
+    }
+    & h5 {
+      width: 82%;
+      font-size: 20px;
+      line-height: 30px;
+    }
+  } */
+
+  .content__container .list,
+  .content__container .answer__container {
+    width: 100%;
+  }
+
+  .content__container .list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background-image: none;
+    position: relative;
+    gap: 40px;
+    padding: 0;
+  }
+
+  .content__container .list .select::before {
+    content: "";
+    position: absolute;
+    top: -20px;
+    right: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background-image: url(../../../../../../assets/RECURSOS_YOCREOMISUERTE/PREGUNTASFRECUENTES/trebol.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin: auto;
+  }
+
+  .select {
+    transform: scale(1.1) translateX(0);
+  }
+
+  /* li:hover {
+    transform: scale(1.1) translateX(0);
+  } */
+}
+
+@media (max-width: 500px) {
+  .frequent-questions__container {
+    padding: 50px 20px 20px;
+  }
+  .answer__container p {
+    font-size: 14px;
+  }
+  .answer__container div {
+    /* align-items: center; */
+    & img {
+      max-height: 30px;
+    }
+    & h5 {
+      width: 85%;
+      font-size: 15px;
+      line-height: 25px;
+    }
+  }
+}

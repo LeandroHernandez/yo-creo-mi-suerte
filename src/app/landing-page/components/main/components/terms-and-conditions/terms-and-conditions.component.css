@@ -1,0 +1,34 @@
+.terms-and-conditions {
+  opacity: 0;
+  animation: show linear both;
+  animation-timeline: view();
+  /* animation-range: entry 20% cover 30%; */
+  animation-range: entry 20% cover 45%;
+}
+
+h5 {
+  font-size: 30px;
+  text-align: center;
+}
+
+p {
+  width: 1050px;
+}
+
+@media (max-width: 500px) {
+  h5 {
+    font-size: 20px;
+  }
+  p {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 350px) {
+  h5 {
+    font-size: 18px;
+  }
+  p {
+    font-size: 12px;
+  }
+}

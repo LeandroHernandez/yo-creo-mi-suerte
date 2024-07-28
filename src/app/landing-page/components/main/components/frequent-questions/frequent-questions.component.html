@@ -1,0 +1,44 @@
+<!-- <p>frequent-questions works!</p> -->
+<section
+  id="frequent-questions"
+  class="frequent-questions mainSection {{
+    activeSection === 'frequent-questions' ? 'activeSection' : ''
+  }}"
+>
+  <div class="frequent-questions__container">
+    <app-section-title
+      [sectionTitle]="'Preguntas Frecuentes'"
+      [other]="'other'"
+    ></app-section-title>
+    <div class="content__container">
+      <ul class="list {{ answer.position }}">
+        @for (questionItem of questionsList; track questionItem.label) {
+        <li
+          (click)="
+            answer = {
+              title: questionItem.title,
+              text: questionItem.text,
+              position: stringify($index)
+            }
+          "
+          class="{{ questionItem.title === answer.title ? 'select' : '' }}"
+        >
+          {{ questionItem.label }}
+        </li>
+        }
+      </ul>
+      <div class="answer__container">
+        <div>
+          <img
+            src="../../../../../../assets/RECURSOS_YOCREOMISUERTE/PREGUNTASFRECUENTES/IconoPregunta.svg"
+            alt="IconoPregunta"
+            class="question__img img"
+          />
+          <h5>{{ answer.title }}</h5>
+        </div>
+        <p>{{ answer.text }}</p>
+      </div>
+    </div>
+  </div>
+  <app-buy-your-ticket-now></app-buy-your-ticket-now>
+</section>

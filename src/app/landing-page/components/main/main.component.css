@@ -1,0 +1,19 @@
+.contactUsAndTermsAndConditionsContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  background-image: url(../../../../assets/RECURSOS_YOCREOMISUERTE/CONTACTANOS/IndicadorContacttanos.png);
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding-bottom: 10px;
+  margin-top: 100px;
+}
+
+@media (max-width: 350px) {
+  .contactUsAndTermsAndConditionsContainer {
+    margin-top: 50px;
+    gap: 10px;
+  }
+}

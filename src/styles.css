@@ -1,1 +1,76 @@
 /* You can add global styles to this file, and also import other style files */
+@import url("https://fonts.googleapis.com/css2?family=MuseoModerno:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+  /* color */
+  --primary: #00683e;
+  --secondary: #4dd485;
+  --accent: #295474;
+
+  /* transitions speeds */
+  --transition-speed: 0.3s;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: "MuseoModerno", sans-serif;
+  max-width: 100vw;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  color: var(--primary);
+}
+
+.img {
+  object-fit: cover;
+  max-width: 100%;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  gap: 16px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.header__logo,
+.nav ul li,
+.buy-your-ticket-now__button {
+  transition: var(--transition-speed) transform ease-out;
+  &:hover {
+    transform: scale(1.1);
+  }
+}
+
+p,
+strong {
+  max-width: 90%;
+  margin: auto;
+}
+
+@keyframes move {
+  to {
+    transform: translateY(-3%);
+  }
+}
+
+@media (max-width: 700px) {
+  p {
+    font-size: 16px;
+  }
+}
+@keyframes show {
+  to {
+    opacity: 1;
+    transform: translate(0) scale(1);
+  }
+}

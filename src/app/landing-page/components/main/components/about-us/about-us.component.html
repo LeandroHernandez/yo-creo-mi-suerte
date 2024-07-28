@@ -1,0 +1,35 @@
+<!-- <p>about-us works!</p> -->
+<section
+  id="about-us"
+  class="about-us mainSection {{
+    activeSection === 'about-us' ? 'activeSection' : ''
+  }}"
+>
+  <div class="about-us__container">
+    <div class="texts">
+      <app-section-title [sectionTitle]="'Sobre Nosotros'"></app-section-title>
+      <p>
+        <strong>
+          En YoCreoMiSuerte.com, somos firmes creyentes en que cada uno es el
+          arquitecto de su propia fortuna.
+        </strong>
+        <span>
+          Ofrecemos una plataforma donde no solo sueñas, sino que haces realidad
+          esos sueños.
+        </span>
+        <strong>
+          ¡Toma la iniciativa y podías ser <br />
+          el próximo afortunado!
+        </strong>
+      </p>
+    </div>
+    <img
+      src="../../../../../../assets/RECURSOS_YOCREOMISUERTE/SOBRENOSTROS/MontajeChica.png"
+      alt="Gana Ahora"
+      class="chica__img img"
+    />
+  </div>
+  <div>
+    <app-buy-your-ticket-now></app-buy-your-ticket-now>
+  </div>
+</section>

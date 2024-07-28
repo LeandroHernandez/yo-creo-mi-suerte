@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Capa_2" data-name="Capa 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 945.98 137.86">
+  <defs>
+    <style>
+      .cls-1 {
+        letter-spacing: -.02em;
+      }
+
+      .cls-2 {
+        letter-spacing: -.05em;
+      }
+
+      .cls-3 {
+        fill: #003c25;
+        font-family: MuseoModerno-Medium, MuseoModerno;
+        font-size: 76.15px;
+        font-weight: 500;
+      }
+
+      .cls-4 {
+        fill: none;
+        stroke: #02a35d;
+        stroke-linecap: round;
+        stroke-miterlimit: 10;
+        stroke-width: 6px;
+      }
+
+      .cls-5 {
+        letter-spacing: -.02em;
+      }
+
+      .cls-6 {
+        letter-spacing: .02em;
+      }
+
+      .cls-7 {
+        fill: #02a35d;
+        font-family: MuseoModerno-SemiBoldItalic, MuseoModerno;
+        font-size: 48.92px;
+        font-style: italic;
+        font-weight: 600;
+      }
+
+      .cls-8 {
+        letter-spacing: 0em;
+      }
+
+      .cls-9 {
+        letter-spacing: -.02em;
+      }
+    </style>
+  </defs>
+  <g id="TEXTO">
+    <text class="cls-7" transform="translate(2.08 122.6)"><tspan class="cls-2" x="0" y="0">T</tspan><tspan x="25.15" y="0">oma acción y compra tu bo</tspan><tspan class="cls-9" x="666.11" y="0">l</tspan><tspan class="cls-8" x="685.04" y="0">e</tspan><tspan class="cls-1" x="710.87" y="0">t</tspan><tspan x="730.29" y="0">o ¡hoy!</tspan></text>
+    <text class="cls-3" transform="translate(0 64.73)"><tspan x="0" y="0">No dejes tu sue</tspan><tspan class="cls-6" x="574" y="0">r</tspan><tspan class="cls-5" x="601.72" y="0">t</tspan><tspan x="631.72" y="0">e al azar</tspan></text>
+    <polyline class="cls-4" points="925.83 100.74 935.6 110.51 925.83 120.28"/>
+    <polyline class="cls-4" points="909.71 100.74 919.48 110.51 909.71 120.28"/>
+  </g>
+</svg>

@@ -1,0 +1,34 @@
+<!-- <p>header works!</p> -->
+
+<header class="header {{ show ? 'header__show' : '' }}">
+  <div class="header__container">
+    <a href="#home" class="a__header__logo">
+      <img
+        src="../../assets/RECURSOS_YOCREOMISUERTE/HOME/LOGO.svg"
+        alt="Logo de Yo Creo Mi Suerte"
+        title="Yo Creo Mi Suerte"
+        class="header__logo img"
+      />
+    </a>
+    <div class="header__nav">
+      <app-nav [activeSection]="activeSection"></app-nav>
+    </div>
+    <img
+      src="../../../../assets/bars.svg"
+      alt="Menú"
+      class="header__bars img"
+      (click)="show = !show"
+    />
+    <div class="header__social">
+      <app-social></app-social>
+    </div>
+  </div>
+  <div class="container__show {{ show ? 'show' : '' }}">
+    <div class="header__nav">
+      <app-nav [show]="'show'"></app-nav>
+    </div>
+    <div class="header__social">
+      <app-social></app-social>
+    </div>
+  </div>
+</header>

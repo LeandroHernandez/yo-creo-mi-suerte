@@ -1,0 +1,56 @@
+<!-- <p>home works!</p> -->
+<section
+  id="home"
+  class="home mainSection {{
+    activeSection === 'home' ? 'activeSection' : ''
+  }} "
+>
+  <!-- <img
+    src="../../assets/RECURSOS_YOCREOMISUERTE/HOME/TituloSuperior.png"
+    alt="Tituto principal"
+    class="title__img img"
+  />
+  <img
+    src="../../assets/RECURSOS_YOCREOMISUERTE/HOME/GanaUnaPs5.png"
+    alt="Gana una PlayStation5"
+    class="text__img img"
+  />
+  <img
+    src="../../assets/RECURSOS_YOCREOMISUERTE/HOME/ps5.png"
+    alt="PlayStation5"
+    class="play__img img"
+  /> -->
+  @for (imageItem of imagesList; track imageItem.src) {
+  <img
+    [src]="'../../assets/RECURSOS_YOCREOMISUERTE/HOME/' + imageItem.src"
+    [alt]="imageItem.alt"
+    [class]="imageItem.class"
+    [title]="imageItem.alt"
+  />
+  }
+  <div id="subSection" class="subSection">
+    <app-buy-your-ticket-now></app-buy-your-ticket-now>
+    <div>
+      <h4>¡Participa y toma</h4>
+      <h4>las riendas de tu suerte!</h4>
+      <figure></figure>
+    </div>
+    <!-- <img
+      src="../../../../../../assets/RECURSOS_YOCREOMISUERTE/HOME/MandoPS5.png"
+      alt="MandoPS5"
+      title="MandoPS5"
+      class="MandoPS5__img img"
+    /> -->
+    <div>
+      <p>
+        <strong>¡Dale un giro a tu día!, este mes podrías ganer un</strong>
+      </p>
+      <h4>PlayStation 5</h4>
+      <p>
+        No dejes tu suerte al azar toma acción y compra tu boleto hoy, cada
+        boleto es una oportunidad de oro.
+      </p>
+      <p><strong>¿Quién dice que no puedes ser el próximo ganador?</strong></p>
+    </div>
+  </div>
+</section>

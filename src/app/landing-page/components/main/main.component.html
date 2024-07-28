@@ -1,0 +1,17 @@
+<!-- <p>main works!</p> -->
+<main>
+  <app-home [activeSection]="activeSection"></app-home>
+  <app-about-us [activeSection]="activeSection"></app-about-us>
+  <app-how-does-it-work [activeSection]="activeSection"></app-how-does-it-work>
+  <app-probabilities [activeSection]="activeSection"></app-probabilities>
+  <app-frequent-questions
+    [activeSection]="activeSection"
+  ></app-frequent-questions>
+  <div class="contactUsAndTermsAndConditionsContainer">
+    <app-contact-us [activeSection]="activeSection"></app-contact-us>
+    <app-buy-your-ticket-now></app-buy-your-ticket-now>
+    <app-terms-and-conditions
+      [activeSection]="activeSection"
+    ></app-terms-and-conditions>
+  </div>
+</main>

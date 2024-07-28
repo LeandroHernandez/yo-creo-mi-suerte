@@ -1,0 +1,126 @@
+/* .how-does-it-work {
+  background-image: url(../../../../../../assets/RECURSOS_YOCREOMISUERTE/COMOFUNCIONA/IndicadorComoFunciona.png);
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: contain;
+} */
+
+.how-does-it-work__container {
+  background-image: url(../../../../../../assets/RECURSOS_YOCREOMISUERTE/COMOFUNCIONA/IndicadorComoFunciona.png);
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding: 150px 0;
+  width: 100%;
+  font-size: 25px;
+  text-align: center;
+  gap: 10px;
+}
+
+@keyframes show {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.iconsContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+  margin-top: 100px;
+  width: 1100px;
+  max-width: 90%;
+  opacity: 0;
+  transform: scale(0.8);
+  animation: show linear both;
+  animation-timeline: view();
+  /* animation-range: entry 20% cover 30%; */
+  animation-range: entry 25% cover 40%;
+}
+
+.how-does-it-work,
+.how-does-it-work__container,
+.iconsContainer div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.iconsContainer div {
+  gap: 16px;
+  font-weight: 600;
+  line-height: 25px;
+}
+
+.iconsContainer div:first-child {
+  & p {
+    margin-top: 10px;
+  }
+}
+
+.iconsContainer div:first-child,
+.iconsContainer div:last-child {
+  width: 200px;
+}
+
+.iconsContainer div:nth-child(2) {
+  width: 450px;
+  font-weight: 700;
+}
+
+.iconsContainer div:last-child {
+  font-weight: 750;
+}
+
+.iconsContainer .img {
+  height: 100px;
+}
+
+.stepsLine__img {
+  width: 900px;
+  max-width: 70%;
+}
+
+.lastp {
+  width: 700px;
+}
+
+.lastp + strong {
+  font-size: 40px;
+}
+
+.buy__button {
+  position: relative;
+  top: -25px;
+}
+
+@media (max-width: 1300px) {
+  .how-does-it-work__container {
+    padding: 100px 0;
+  }
+}
+
+@media (max-width: 1074px) {
+  .how-does-it-work__container {
+    padding: 50px 0;
+  }
+}
+
+@media (max-width: 800px) {
+  .iconsContainer {
+    flex-direction: column;
+    margin-top: 50px;
+  }
+
+  .stepsLine__img {
+    display: none;
+  }
+}
+
+@media (max-width: 700px) {
+  .lastp + strong {
+    font-size: 16px;
+  }
+}

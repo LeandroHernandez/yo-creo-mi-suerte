@@ -1,0 +1,11 @@
+<!-- <p>section-title works!</p> -->
+<h2
+  class="sectionTitle {{
+    other ? (other === 'Tu Oportunidad de ganar es' ? 'oportunity' : other) : ''
+  }}"
+>
+  @if(other === 'Tu Oportunidad de ganar es') {
+  <span>{{ other }}</span>
+  }
+  {{ sectionTitle }}
+</h2>

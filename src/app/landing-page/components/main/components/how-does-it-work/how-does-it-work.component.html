@@ -1,0 +1,38 @@
+<!-- <p>how-does-it-work works!</p> -->
+<section
+  id="how-does-it-work"
+  class="how-does-it-work mainSection {{
+    activeSection === 'how-does-it-work' ? 'activeSection' : ''
+  }} "
+>
+  <div class="how-does-it-work__container">
+    <app-section-title [sectionTitle]="'¿Cómo Funciona?'"></app-section-title>
+    <div class="iconsContainer">
+      @for ( iconItem of iconsList; track iconItem.src ) {
+      <div>
+        <img
+          src="../../../../../../assets/RECURSOS_YOCREOMISUERTE/COMOFUNCIONA/{{
+            iconItem.src
+          }}"
+          alt="{{ iconItem.alt }}"
+          class="{{ iconItem.class }}"
+        />
+        <p>{{ iconItem.text }}</p>
+      </div>
+      }
+    </div>
+    <img
+      src="../../../../../../assets/RECURSOS_YOCREOMISUERTE/COMOFUNCIONA/LineaDePasos.svg"
+      alt="LineaDePasos"
+      class="stepsLine__img img"
+    />
+    <p class="lastp">
+      Entiende el proceso de participar en nuestras emocionantes rifas y toma tu
+      oportunidad de ganar en grande.
+    </p>
+    <strong>¿Listo para probar tu suerte?</strong>
+  </div>
+  <div class="buy__button">
+    <app-buy-your-ticket-now></app-buy-your-ticket-now>
+  </div>
+</section>

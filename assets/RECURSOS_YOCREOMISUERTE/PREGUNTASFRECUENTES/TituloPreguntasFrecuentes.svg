@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Capa_2" data-name="Capa 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1033.15 128.95">
+  <defs>
+    <style>
+      .cls-1 {
+        letter-spacing: 0em;
+      }
+
+      .cls-2 {
+        fill: none;
+        stroke: #00683e;
+        stroke-miterlimit: 10;
+        stroke-width: 2px;
+      }
+
+      .cls-3 {
+        fill: #00683e;
+        font-family: MuseoModerno-Black, MuseoModerno;
+        font-size: 90px;
+        font-weight: 800;
+      }
+
+      .cls-4 {
+        letter-spacing: -.01em;
+      }
+    </style>
+  </defs>
+  <g id="TEXTO">
+    <text class="cls-3" transform="translate(43.08 89.44)"><tspan x="0" y="0">Pregun</tspan><tspan class="cls-4" x="315.27" y="0">t</tspan><tspan x="354.96" y="0">as Frecuen</tspan><tspan class="cls-4" x="825.83" y="0">t</tspan><tspan class="cls-1" x="865.52" y="0">es</tspan></text>
+    <rect class="cls-2" x="1" y="1" width="1031.15" height="114.09" rx="26.38" ry="26.38"/>
+  </g>
+</svg>
